@@ -64,6 +64,20 @@ You should also update your manifest with:
 and replace INSERT.APP.ID.HERE by your application id (<id> tag in your manifest).
 
 
+To implement in iOS the manifest file need:
+
+
+
+     <iPhone> 
+        <InfoAdditions> … </InfoAdditions> 
+        <Entitlements> <![CDATA[
+          <key>aps-environment</key>     
+          <string>development</string> ]]> 
+       </Entitlements> </iPhone>
+       
+       
+
+
 Usage
 -----
 
